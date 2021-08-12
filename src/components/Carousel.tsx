@@ -6,7 +6,7 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-import mockData, { Movie } from '../data/mock';
+import mockData, { Movie } from './../data/mock';
 
 import Poster from './Poster';
 
