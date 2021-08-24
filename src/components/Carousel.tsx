@@ -1,23 +1,23 @@
-import React from 'react';
-import Slick from 'react-slick';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import Slick from "react-slick";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
-import mockData, { Movie } from './../data/mock';
+import mockData, { Movie } from "./../data/mock";
 
-import Poster from './Poster';
+import Poster from "./Poster";
 
-import './Carousel.css';
+import "./Carousel.css";
 
 interface CarouselData {
   title?: string;
   data?: Movie[];
 }
 
-const Carousel = ({ title = 'Carousel', data = mockData }: CarouselData) => {
+const Carousel = ({ title = "Carousel", data = mockData }: CarouselData) => {
   enum Direciton {
     left,
     right,
@@ -32,8 +32,9 @@ const Carousel = ({ title = 'Carousel', data = mockData }: CarouselData) => {
   }) => (
     <button
       type="button"
-      className={`absolute w-16 h-full z-10 bg-black bg-opacity-50 top-0 ${direction ? 'right-0' : 'left-0'
-        }`}
+      className={`absolute w-16 h-full z-10 bg-black bg-opacity-50 top-0 ${
+        direction ? "right-0" : "left-0"
+      }`}
       onClick={onClick}
     >
       <FontAwesomeIcon
